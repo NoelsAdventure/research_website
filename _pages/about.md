@@ -26,6 +26,6 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-My name is Noel, a PhD student in the Department of Electrical and Computer Engineering at the University of Houston. I am advised by [Prof. Bin Hu](https://binhu85.github.io/). My current research focuses on robotics safety, specifically perception-aware safe 3D leader-follower formation controllers for multi-quadrotor systems.
+My name is Noel, a PhD student in the Department of Electrical and Computer Engineering at the University of Houston. I am advised by [Prof. Bin Hu](https://binhu85.github.io/). My current research focuses on robotics safety.
 
 Previously, I received my bachelor's degree in Mechatronics Engineering from Parahyangan Catholic University in Indonesia. After graduation, I spent one semester conducting research at Parahyangan Catholic University advised by [Prof. Tua Tamba](https://www.linkedin.com/in/tuatamba/).
