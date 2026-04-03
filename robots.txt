@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://NoelsAdventure.my.id/research_website/al-folio/sitemap.xml
+Sitemap: https://noelsadventure.my.id/research_website/sitemap.xml
