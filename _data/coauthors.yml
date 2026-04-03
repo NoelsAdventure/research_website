@@ -1,27 +1,31 @@
-"kim":
-  - firstname: ["Tony Tae-Hyoung", "T. T.-H.", 'T.']
-    url: https://sites.google.com/view/tonykim/professor
+"Tamba":
+  - label: "Tua A Tamba"
+    url: "https://www.linkedin.com/in/tuatamba/"
 
-"abdelfattah":
-  - firstname: ["Mohamed", "Mohamed S."]
-    url: https://www.mohsaied.com/
+"Hu":
+  - label: "Bin Hu"
+    url: "https://binhu85.github.io/"
 
-"seo":
-  - firstname: ["Jae-sun", "Jae sun"]
-    url: https://seo.ece.cornell.edu/professor/
+"Cinun":
+  - label: "Benedictus CG Cinun"
+    url: "https://..." 
 
-"meng":
-  - firstname: ["Jian", "J."]
-    url: https://mengjian0502.github.io/
+"Wang":
+  - label: "Xiaofeng Wang"
+    url: "https://..." 
 
-"constantinides":
-  - firstname: ["George A.", "George"]
-    url: https://cas.ee.ic.ac.uk/people/gac1/
+"Gunarso":
+  - label: "Michael A Gunarso"
+    url: "https://..." 
 
-"tambe":
-  - firstname: ["Thierry", "T."]
-    url: https://thierrytambe.com/
+"Nazaruddin":
+  - label: "Yul Y Nazaruddin"
+    url: "https://..." 
 
-"verhelst":
-  - firstname: ["Marian", "M."]
-    url: https://micas.esat.kuleuven.be/team/marian-verhelst
+"Nadhira":
+  - label: "Vebi Nadhira"
+    url: "https://..." 
+
+"Sadiyoko":
+  - label: "Ali A Sadiyoko"
+    url: "https://..."
