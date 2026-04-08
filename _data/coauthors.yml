@@ -1,31 +1,35 @@
-Tamba:
-  - label: Tua A Tamba
+tamba:
+  - firstname: ["Tua A", "T. A.", "Tua"]
     url: https://www.linkedin.com/in/tuatamba/
 
-Hu:
-  - label: Bin Hu
+hu:
+  - firstname: ["Bin", "B."]
     url: https://binhu85.github.io/
 
-Cinun:
-  - label: Benedictus CG Cinun
-    url: https://... 
+cinun:
+  - firstname: ["Benedictus CG", "B. C. G.", "Benedictus"]
+    url: https://... # Add your URL here
 
-Wang:
-  - label: Xiaofeng Wang
-    url: https://... 
+wang:
+  - firstname: ["Xiaofeng", "X."]
+    url: https://...
 
-Gunarso:
-  - label: Michael A Gunarso
-    url: https://... 
+gunarso:
+  - firstname: ["Michael A", "M. A.", "Michael"]
+    url: https://...
 
-Nazaruddin:
-  - label: Yul Y Nazaruddin
-    url: https://... 
+nazaruddin:
+  - firstname: ["Yul Y", "Y. Y.", "Yul"]
+    url: https://...
 
-Nadhira:
-  - label: Vebi Nadhira
-    url: https://... 
+nadhira:
+  - firstname: ["Vebi", "V."]
+    url: https://...
 
-Sadiyoko:
-  - label: Ali A Sadiyoko
+sadiyoko:
+  - firstname: ["Ali A", "A. A.", "Ali"]
+    url: https://...
+
+santjoko:
+  - firstname: ["Immanuel R", "I. R.", "Immanuel"]
     url: https://...
