@@ -356,22 +356,30 @@
     {% endif %}
 
     {% if entry.video and site.enable_video_embedding %}
-      <!-- Hidden video block -->
+      <style>
+        /* This makes the video the correct shape and removes the 'squash' */
+        .publications .abstract iframe, 
+        .publications .abstract video {
+          width: 100%;
+          aspect-ratio: 16 / 9;
+          height: auto !important;
+          max-width: 700px;
+          display: block;
+          margin: 10px auto;
+          border: none;
+        }
+        /* This shrinks the big dotted box to fit the video tightly */
+        .publications .abstract.hidden {
+          padding: 0 !important;
+          border: none !important; /* Removes the dotted line if you want */
+        }
+      </style>
+
       <div class="abstract hidden">
-        <div style="text-align: center;">{% include video.liquid path=entry.video class="img-fluid rounded z-depth-1" controls=true %}</div>
+        <div style="text-align: center;">
+          {% include video.liquid path=entry.video class="img-fluid rounded z-depth-1" %}
+        </div>
       </div>
     {% endif %}
   </div>
 </div>
-
-
-/* Fix for the video player shape */
-.publications .abstract iframe, 
-.publications .abstract video {
-  width: 100%;
-  aspect-ratio: 16 / 9; /* Forces standard YouTube shape */
-  height: auto !important;
-  max-width: 700px; /* Keeps it from getting too huge on desktops */
-  display: block;
-  margin: 10px auto;
-}
