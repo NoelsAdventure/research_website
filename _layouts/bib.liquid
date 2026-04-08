@@ -199,7 +199,7 @@
       {% endif %}
       {% if entry.html %}
         {% if entry.html contains '://' %}
-          <a href="{{ entry.html }}" class="btn btn-sm z-depth-0" role="button">HTML</a>
+          <a href="{{ entry.html }}" class="btn btn-sm z-depth-0" role="button">Paper</a>
         {% else %}
           <a href="{{ entry.html | prepend: '/assets/html/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">HTML</a>
         {% endif %}
@@ -363,3 +363,15 @@
     {% endif %}
   </div>
 </div>
+
+
+/* Fix for the video player shape */
+.publications .abstract iframe, 
+.publications .abstract video {
+  width: 100%;
+  aspect-ratio: 16 / 9; /* Forces standard YouTube shape */
+  height: auto !important;
+  max-width: 700px; /* Keeps it from getting too huge on desktops */
+  display: block;
+  margin: 10px auto;
+}
