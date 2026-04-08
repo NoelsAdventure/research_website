@@ -8,28 +8,20 @@ hu:
 
 cinun:
   - firstname: ["Benedictus CG", "B. C. G.", "Benedictus"]
-    url: https://... # Add your URL here
-
-wang:
-  - firstname: ["Xiaofeng", "X."]
-    url: https://...
+    url: https://www.linkedin.com/in/benedictus-christo-geroda-cinun/ # Add your URL here
 
 gunarso:
   - firstname: ["Michael A", "M. A.", "Michael"]
-    url: https://...
+    url: https://www.linkedin.com/in/michael-andrianto-gunarso-24b357282/
 
-nazaruddin:
-  - firstname: ["Yul Y", "Y. Y.", "Yul"]
-    url: https://...
+# nazaruddin:
+#   - firstname: ["Yul Y", "Y. Y.", "Yul"]
+#     url: https://...
 
-nadhira:
-  - firstname: ["Vebi", "V."]
-    url: https://...
+# nadhira:
+#   - firstname: ["Vebi", "V."]
+#     url: https://...
 
-sadiyoko:
-  - firstname: ["Ali A", "A. A.", "Ali"]
-    url: https://...
-
-santjoko:
-  - firstname: ["Immanuel R", "I. R.", "Immanuel"]
-    url: https://...
+# sadiyoko:
+#   - firstname: ["Ali A", "A. A.", "Ali"]
+#     url: https://...
