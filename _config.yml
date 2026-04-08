@@ -314,8 +314,8 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Chen]
-  first_name: [Yuzong]
+  last_name: [Santjoko]
+  first_name: [Immanuel R]
 
   style: apa
   locale: en
