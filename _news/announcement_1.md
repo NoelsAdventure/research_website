@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2022-08-16
+date: 2025-08-16
 inline: true
 related_posts: false
 ---
 
-Start my PhD study at Cornell University!
+Start my PhD study at University of Houston!
