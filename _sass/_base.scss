@@ -709,7 +709,11 @@ footer.sticky-bottom {
         abbr {
           display: inline-block;
           font-size: 0.875rem;
-          width: 85px;
+          min-width: 85px;
+          max-width: calc(100% - 16px);
+          white-space: normal;
+          text-align: center;
+          line-height: 1.3;
           margin-left: 16px;
           margin-right: 50px;
           margin-top: 4px;
