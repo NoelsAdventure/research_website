@@ -173,7 +173,9 @@
     {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entryyear != "" %}{% endif %}{{ entrymonth }}{{ entryyear }}{% endcapture %}
     <div class="periodical">
       {{ periodical | strip }}
-      {% if entry.status %}<span class="badge bg-warning text-dark pub-status">{{ entry.status }}</span>{% endif %}
+      {% if entry.status -%}
+        <span class="badge bg-warning text-dark pub-status">{{ entry.status }}</span>
+      {%- endif %}
     </div>
     <div class="periodical">
       {{ entry.note | strip }}
@@ -376,13 +378,17 @@
                 controls
                 playsinline
                 preload="none"
-                {% if entry[k_poster] %}poster="{{ entry[k_poster] | relative_url }}"{% endif %}
+                {% if entry[k_poster] %}
+                  poster="{{ entry[k_poster] | relative_url }}"
+                {% endif %}
                 aria-label="{{ entry[k_label] }}"
               >
                 <source src="{{ entry[k_src] | relative_url }}" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
-              <figcaption><strong>{{ entry[k_label] }}.</strong> {{ entry[k_caption] }}</figcaption>
+              <figcaption>
+                <strong>{{ entry[k_label] }}.</strong> {{ entry[k_caption] }}
+              </figcaption>
             </figure>
           {% endif %}
         {% endfor %}
@@ -392,7 +398,7 @@
     {% if entry.video and site.enable_video_embedding %}
       <style>
         /* This makes the video the correct shape and removes the 'squash' */
-        .publications .abstract iframe, 
+        .publications .abstract iframe,
         .publications .abstract video {
           width: 100%;
           aspect-ratio: 16 / 9;
