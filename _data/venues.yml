@@ -7,3 +7,18 @@
 
 "Vision":
   color: "#009f36"
+
+"CoRL Workshop":
+  url: https://2026.corl.org/
+  color: "#6a1b9a"
+
+"RA-L":
+  url: https://www.ieee-ras.org/publications/ra-l
+  color: "#00629b"
+
+"Adv. Control":
+  color: "#8b1a1a"
+
+"IEEE Access":
+  url: https://ieeeaccess.ieee.org/
+  color: "#00629b"

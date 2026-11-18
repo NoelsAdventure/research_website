@@ -6,7 +6,7 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Immanuel 
 middle_name: R
 last_name: Santjoko
-email: isantjok0@uh.edu
+email: isantjoko@uh.edu
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 footer_text: >
@@ -17,7 +17,7 @@ keywords: # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🤖 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
-url: http://research.noelsadventure.my.id # the base hostname & protocol for your site
+url: https://research.noelsadventure.my.id # the base hostname & protocol for your site
 baseurl: "" # the subpath of your site, e.g. /blog/. Leave blank for root
 last_updated: true # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
@@ -315,7 +315,7 @@ display_categories: ["external-services"] # these categories will be displayed o
 
 scholar:
   last_name: [Santjoko]
-  first_name: [Immanuel R]
+  first_name: [Immanuel R, Immanuel R.]
 
   style: apa
   locale: en
@@ -368,8 +368,13 @@ filtered_bibtex_keywords:
     preview,
     selected,
     slides,
+    status,
+    summary,
     supp,
     video,
+    vid1_src, vid1_poster, vid1_label, vid1_caption,
+    vid2_src, vid2_poster, vid2_label, vid2_caption,
+    vid3_src, vid3_poster, vid3_label, vid3_caption,
     website,
   ]
 

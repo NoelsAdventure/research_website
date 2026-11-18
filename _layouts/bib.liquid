@@ -173,10 +173,15 @@
     {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entryyear != "" %}{% endif %}{{ entrymonth }}{{ entryyear }}{% endcapture %}
     <div class="periodical">
       {{ periodical | strip }}
+      {% if entry.status %}<span class="badge bg-warning text-dark pub-status">{{ entry.status }}</span>{% endif %}
     </div>
     <div class="periodical">
       {{ entry.note | strip }}
     </div>
+
+    {% if entry.summary %}
+      <div class="pub-summary">{{ entry.summary }}</div>
+    {% endif %}
 
     <!-- Links/Buttons -->
     <div class="links">
@@ -192,7 +197,7 @@
         <a href="https://doi.org/{{ entry.doi }}" class="btn btn-sm z-depth-0" role="button">DOI</a>
       {% endif %}
       {% if entry.arxiv %}
-        <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button">arXiv</a>
+        <a href="https://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button">arXiv</a>
       {% endif %}
       {% if entry.bibtex_show %}
         <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
@@ -223,6 +228,9 @@
       {% elsif entry.video %}
         <a href="{{ entry.video }}" class="btn btn-sm z-depth-0" role="button">Video</a>
       {% endif %}
+      {% if entry.vid1_src %}
+        <a class="abstract btn btn-sm z-depth-0" role="button">Videos</a>
+      {% endif %}
       {% if entry.blog %}
         <a href="{{ entry.blog }}" class="btn btn-sm z-depth-0" role="button">Blog</a>
       {% endif %}
@@ -244,7 +252,7 @@
         {% endif %}
       {% endif %}
       {% if entry.website %}
-        <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
+        <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Project</a>
       {% endif %}
     </div>
     {% if site.enable_publication_badges %}
@@ -352,6 +360,32 @@
         {% highlight bibtex %}
         {{- entry.bibtex | hideCustomBibtex -}}
         {% endhighlight %}
+      </div>
+    {% endif %}
+
+    {% if entry.vid1_src %}
+      <div class="abstract hidden pub-videos">
+        {% for n in (1..3) %}
+          {% assign k_src = 'vid' | append: n | append: '_src' %}
+          {% assign k_poster = 'vid' | append: n | append: '_poster' %}
+          {% assign k_label = 'vid' | append: n | append: '_label' %}
+          {% assign k_caption = 'vid' | append: n | append: '_caption' %}
+          {% if entry[k_src] %}
+            <figure class="pub-video">
+              <video
+                controls
+                playsinline
+                preload="none"
+                {% if entry[k_poster] %}poster="{{ entry[k_poster] | relative_url }}"{% endif %}
+                aria-label="{{ entry[k_label] }}"
+              >
+                <source src="{{ entry[k_src] | relative_url }}" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <figcaption><strong>{{ entry[k_label] }}.</strong> {{ entry[k_caption] }}</figcaption>
+            </figure>
+          {% endif %}
+        {% endfor %}
       </div>
     {% endif %}
 
