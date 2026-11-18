@@ -30,11 +30,12 @@ table {
     width: 15%;
   }
 
-  th, td {
+  th,
+  td {
     line-height: 1.15;
     font-size: 1.05rem;
     padding: 0;
-  }  
+  }
 }
 
 a,
@@ -768,7 +769,7 @@ footer.sticky-bottom {
 
       .links {
         margin-top: 0.15rem;
-        font-size: 0.85rem;        
+        font-size: 0.85rem;
 
         a.btn {
           color: var(--global-text-color);
