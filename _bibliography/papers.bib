@@ -5,7 +5,7 @@
   booktitle={CoRL 2026 Workshop on Human-Centered Robot Learning and Interaction},
   year={2026},
   arxiv={2610.25419},
-  website={https://noelsadventure.github.io/rcra.github.io/},
+  website={https://nail-uh.github.io/rcra.github.io/},
   summary={Estimates pedestrian reactivity and adapts robot navigation between conservative and cooperative behavior to balance safety and efficiency.},
   vid1_src={/assets/video/research/rcra_simulation.mp4},
   vid1_poster={/assets/video/research/rcra_simulation.jpg},
@@ -28,10 +28,14 @@
   arxiv={2605.17533},
   summary={Combines distributed 3D formation control with control barrier functions to preserve leader visibility.},
   website={https://nail-uh.github.io/draft.github.io/},
-  vid1_src={/assets/video/research/formation_experiment.mp4},
-  vid1_poster={/assets/video/research/formation_experiment.jpg},
-  vid1_label={Hardware experiment},
-  vid1_caption={Hardware perception-safety experiment on ModalAI Seeker quadrotors (one leader, two followers) with a yaw-modulated trajectory and a formation reference that conflicts with the field-of-view limits. The follower without the safety margin loses leader visibility; the follower with it keeps the leader in view.},
+  vid1_src={/assets/video/research/formation_tracking_experiment.mp4},
+  vid1_poster={/assets/video/research/formation_tracking_experiment.jpg},
+  vid1_label={Hardware: formation tracking},
+  vid1_caption={Hardware formation-tracking experiment on ModalAI Seeker quadrotors, comparing the proposed method with a perception-aware IBVS baseline. The baseline shows larger tracking errors during leader motion and its MPC solver fails near the end of the run, while the proposed method maintains the formation.},
+  vid2_src={/assets/video/research/formation_experiment.mp4},
+  vid2_poster={/assets/video/research/formation_experiment.jpg},
+  vid2_label={Hardware: perception safety},
+  vid2_caption={Hardware perception-safety experiment on ModalAI Seeker quadrotors (one leader, two followers) with a yaw-modulated trajectory and a formation reference that conflicts with the field-of-view limits. The follower without the safety margin loses leader visibility; the follower with it keeps the leader in view.},
   selected={true}
 }
 
@@ -84,6 +88,7 @@
   journal={arXiv preprint arXiv:2512.11125},
   year={2025},
   arxiv={2512.11125},
+  website={https://nail-uh.github.io/StewartPlatformSafeControl.github.io/},
   selected={false}
 }
 
